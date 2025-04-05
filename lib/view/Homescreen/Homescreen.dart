@@ -25,10 +25,7 @@ class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: Icon(Icons.arrow_back_ios),
-        title: Text("Go Back"),
-      ),
+      appBar: Appbarsection(),
       body: Consumer<HomescreenController>(
         builder: (context, value, child) => value.isloading
             ? Center(child: CircularProgressIndicator())
@@ -205,6 +202,13 @@ class _HomescreenState extends State<Homescreen> {
                 ),
               ),
       ),
+    );
+  }
+
+  AppBar Appbarsection() {
+    return AppBar(
+      leading: Icon(Icons.arrow_back_ios),
+      title: Text("Go Back"),
     );
   }
 }

@@ -45,8 +45,6 @@ class ProductCard extends StatelessWidget {
                   child: IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.bookmark_outline, color: Colors.green),
-                    padding: EdgeInsets.zero,
-                    constraints: BoxConstraints(),
                   ),
                 )
               ],
