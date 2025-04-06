@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habbition_ui/view/Bottomnavibarscreen/bottomnavibar.dart';
 
 class ProductScreen extends StatelessWidget {
   final String productimage;
@@ -46,7 +47,13 @@ class ProductScreen extends StatelessWidget {
                   top: 5,
                   left: 5,
                   child: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Bottomnavibarscreen(),
+                          ));
+                    },
                     icon: Icon(Icons.arrow_back_ios,
                         size: 30, color: Colors.green),
                   ),
